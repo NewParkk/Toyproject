@@ -1,2 +1,5 @@
 /build/
 /Servers/**
+.project
+/.settings/**
+.metadata/**
