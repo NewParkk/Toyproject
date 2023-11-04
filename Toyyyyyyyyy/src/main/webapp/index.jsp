@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-hello worrrrrrrrrrrrrrrld
-mobong in project
+	<script>
+		location.href = 'login.jsp';
+	</script>
 </body>
 </html>
