@@ -31,6 +31,7 @@
 						aria-expanded="false">접속하기<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="login.jsp">로그인</a></li>
+						<!-- 회원가입을 들어왔을 때 회원가입 문구를 active -->
 						<li class="active"><a href="join.jsp">회원가입</a></li>
 						
 					</ul>
@@ -48,15 +49,19 @@
 				<form method="post" action="joinaction.jsp">
 					<h3 style="text-align: center;">회원가입 화면</h3>
 					<div class="form-group">
+						<!-- 아이디 입력 -->
 						<input type="text" class="form-control"placeholder="아이디" name="userID" maxlength="20" value="">
 					</div>
 					<div class="form-group">
+						<!-- 비밀번호 입력 -->
 						<input type="password" class="form-control"placeholder="비밀번호" name="userPassword" maxlength="20">
 					</div>
 					<div class="form-group">
+						<!-- 이름 입력 -->
 						<input type="text" class="form-control"placeholder="이름" name="userName" maxlength="20">
 					</div>
 					<div class="form-group" style="text-align: center">
+						<!-- 성별은 라디오박스 형태로 선택 -->
 						<div class="btn-group" data-toggle="buttons">
 							<label class="btn btn-primary active">
 								<input type="radio" name="userGender" autocomplete="off" value="남자" checked>남자
@@ -67,9 +72,10 @@
 						</div>
 					</div>
 					<div class="form-group">
+						<!-- 이메일 입력 (이메일 형식으로) -->
 						<input type="email" class="form-control"placeholder="이메일" name="userEmail" maxlength="20">
 					</div>
-					
+					<!-- 회원가입 버튼으로 디자인 변경 후 form 태그의 action으로 이동 -->
 					<input type="submit" class="btn btn-primary form-control" value="회원가입">
 				</form>
 			</div>

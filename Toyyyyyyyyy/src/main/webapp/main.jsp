@@ -11,6 +11,8 @@
 </head>
 <body>
 	<%
+		// userID를 현재 세션에 있는지 확인하고
+		// 존재하면 변수 userID에 기입
 		String userID = null;
 		if (session.getAttribute("userID") != null) {
 			userID = (String) session.getAttribute("userID");
@@ -28,18 +30,17 @@
 			</button>
 			<a class="navbar-brand" href="main.jsp">JSP 웹 페이지</a>
 		</div>
+		<!-- 버튼이나 다른 디자인은 설명할 필요가 없어서 ㅋㅋ  -->
 		<div class="collapse navbar-collapse" id =bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="main.jsp">메인</a>
 				<li><a href="bbs.jsp">게시판</a>	
 			</ul>
 			<%
+				// 세션에서 받아온 userID가 없으면 
 				if(userID == null) {
-					
-					
-				
 			%>
-			
+			<!-- 초기 화면으로 출력 -->
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="a" class="dropdown-toggle"
@@ -53,8 +54,10 @@
 				</li>
 			</ul>
 			<%
+				// 세션에서 받아온 userID가 있으면 
 				} else{
 			%>
+			<!-- 접속한 userID를 세팅해서 로그인한 메인페이지로 이동 -->
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="a" class="dropdown-toggle"

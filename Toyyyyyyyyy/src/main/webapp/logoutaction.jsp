@@ -9,6 +9,7 @@
 <body>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<%
+		// 세션 완전 삭제
 		session.invalidate();
 	%>
 	<script>

@@ -31,6 +31,8 @@
 						data-toggle="dropdown" role="button" aria-haspopup="true"
 						aria-expanded="false">접속하기<span class="caret"></span></a>
 					<ul class="dropdown-menu">
+						<!-- 로그인을 클릭해서 들어온 화면이라 로그인에 active 클래스를 추가 -->
+						<!-- active 클래스는 해당 태그부분을 표시 -->
 						<li class="active"><a href="login.jsp">로그인</a></li>
 						<li><a href="join.jsp">회원가입</a></li>
 						
@@ -49,11 +51,15 @@
 				<form method="post" action="loginaction.jsp">
 					<h3 style="text-align: center;">로그인 화면</h3>
 					<div class="form-group">
+						<!-- 아이디 입력 -->
 						<input type="text" class="form-control"placeholder="아이디" name="userID" maxlength="20" value="">
 					</div>
 					<div class="form-group">
+						<!-- 비밀번호 입력 -->
 						<input type="password" class="form-control"placeholder="비밀번호" name="userPassword" maxlength="20">
 					</div>
+					<!-- input을 버튼디자인으로 변경 -->
+					<!-- type을 submit으로 만들어서 form 태그에 action으로 이동하도록 함 -->
 					<input type="submit" class="btn btn-primary form-control" value="로그인">
 				</form>
 			</div>
