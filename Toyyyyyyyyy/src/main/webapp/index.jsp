@@ -1,15 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/custom.css">
 <title>Toyproject</title>
 </head>
 <body>
 	<script>
-		// location.href ÀÌ°Å´Â URLÀ» ÀÌµ¿
-		// main.jsp·Î ÀÔ·ÂÇÑ°Ç ÇöÀç index.jsp¿Í °°Àº °æ·Î¿¡ ÀÖ¾î¼­ '/' ÀÌ°Å³ª '../' ÀÌ·¸°Ô ÀÔ·ÂÇÏÁö ¾ÊÀ½
+		// location.href ì´ê±°ëŠ” URLì„ ì´ë™
+		// main.jspë¡œ ì…ë ¥í•œê±´ í˜„ì¬ index.jspì™€ ê°™ì€ ê²½ë¡œì— ìˆì–´ì„œ '/' ì´ê±°ë‚˜ '../' ì´ë ‡ê²Œ ì…ë ¥í•˜ì§€ ì•ŠìŒ
 		location.href = 'main.jsp';
 	</script>
 </body>

@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/custom.css">
 <title>험난한 게시판 만들기</title>
 </head>
 <body>
@@ -46,6 +47,7 @@
 		<div class="col-lg-4">
 			<div class="jumbotron" style="padding-top: 20px;">
 				<!-- post방식으로 action으로 보냄 -->
+				<!-- <form method="post" action="joinupdate.jsp"> -->
 				<form method="post" action="joinaction.jsp">
 					<h3 style="text-align: center;">회원가입 화면</h3>
 					<div class="form-group">
